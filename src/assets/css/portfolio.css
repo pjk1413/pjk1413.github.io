@@ -1,0 +1,214 @@
+/* ALIGN */
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* SPACING */
+.m-0 {
+    margin: 0;
+}
+
+.m-1 {
+    margin: 2px;
+}
+
+.mx-1 {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.mx-2 {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.mx-3 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.mx-4 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.p-1 {
+    padding: 2px;
+}
+
+.p-2 {
+    padding: 4px;
+}
+
+.p-3 {
+    padding: 6px;
+}
+
+.p-4 {
+    padding: 8px;
+}
+
+.p-5 {
+    padding: 15px;
+}
+
+.radius-5 {
+    border-radius: 5px;
+}
+
+/* COLOR */
+.bg-dark {
+    background-color: rgba(2, 48, 71)
+}
+
+.bg-grey {
+    background-color: rgba(202, 210, 197)
+}
+
+.bg-secondary {
+    background-color: rgba(33, 158, 188)
+}
+
+.bg-light {
+    background-color: rgba(235, 235, 235)
+}
+
+.bg-primary {
+    background-color: rgba(142, 202, 230)
+}
+
+.bg-info {
+    background-color: rgba(255, 183, 3)
+}
+
+.bg-warning {
+    background-color: rgba(251, 133, 0)
+}
+
+.bg-danger {
+    background-color: rgba(219, 76, 64)
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+
+.dark {
+    color: rgba(2, 48, 71)
+}
+
+.grey {
+    color: rgba(202, 210, 197)
+}
+
+.secondary {
+    color: rgba(33, 158, 188)
+}
+
+.light {
+    color: rgba(235, 235, 235)
+}
+
+.primary {
+    color: rgba(142, 202, 230)
+}
+
+.info {
+    color: rgba(255, 183, 3)
+}
+
+.warning {
+    color: rgba(251, 133, 0)
+}
+
+.danger {
+    color: rgba(219, 76, 64)
+}
+
+/* FONT STYLE */
+
+.bold {
+ font-weight: 500;
+}
+
+.bolder {
+ font-weight: 800;
+}
+
+.inconsolata {
+    font-family: 'Inconsolata', monospace;
+}
+
+.supermercado {
+    font-family: 'Supermercado One', cursive;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.no-decor {
+    text-decoration: none;
+}
+
+/* BORDER */
+
+.border-bottom {
+    border-bottom: 2px solid rgba(82, 72, 156, .3);
+}
+
+
+/* WIDTH */
+
+.w-25 {
+    width: 25%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
