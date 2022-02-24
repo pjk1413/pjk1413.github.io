@@ -1,0 +1,36 @@
+.media-about-width {
+    width: 80%;
+}
+
+/* cell phones */
+@media only screen and (max-width: 480px) {
+    .media-title-left {
+        text-align: center !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .media-space-small {
+        margin: 3em 0 3em 0;
+    }
+
+    .media-space-medium {
+        margin: 5em 0 5em 0;
+    }
+
+    .media-about-width {
+        width: 95% !important;
+    }
+}
+/* tablets */
+@media only screen and (max-width: 768px) {
+    .media-about-width {
+        width: 95%;
+    }
+}
+/* small screens and laptops */
+@media only screen and (max-width: 1024px) {
+    .media-about-width {
+        width: 95%;
+    }
+} 

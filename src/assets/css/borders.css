@@ -1,0 +1,29 @@
+.br-1 { border-radius: 3px; }
+.br-2 { border-radius: 5px; }
+.br-3 { border-radius: 7px; }
+.br-4 { border-radius: 9px; }
+.br-5 { border-radius: 12px; }
+
+.bw-1 { border-width: 1px; }
+.bw-2 { border-width: 2px; }
+.bw-3 { border-width: 3px; }
+.bw-4 { border-width: 4px; }
+.bw-5 { border-width: 5px; }
+
+.border-solid { border-style: solid; }
+
+.bc-primary { border-color: var(--primary); }
+.bc-secondary { border-color: var(--secondary); }
+.bc-light { border-color: var(--light); }
+.bc-dark { border-color: var(--dark); }
+.bc-warning { border-color: var(--warning); }
+.bc-danger { border-color: var(--danger); }
+.bc-info { border-color: var(--info); }
+.bc-grey { border-color: var(--grey); }
+
+/* cell phones */
+@media only screen and (max-width: 480px) {}
+/* tablets */
+@media only screen and (max-width: 768px) {}
+/* small screens and laptops */
+@media only screen and (max-width: 1024px) {} 

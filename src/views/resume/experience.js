@@ -2,6 +2,10 @@ export const experience = [
     { 
         title: "Spectrum", 
         job: 'Software Engineer II', 
+        links: [
+            { name: 'Spectrum', link: 'https://www.spectrum.com/' },
+            { name: 'Alation Data Catalog', link: 'https://www.alation.com/product/data-catalog/' }
+        ],
         body: [
             "Developer working with Business Intelligence team to integrate a database catalog",
             "Worked with various teams across the organization to encourage and engage users with data best practices and curation of the data catalog",
@@ -13,6 +17,10 @@ export const experience = [
     { 
         title: "FEDITC", 
         job: 'Software Engineer', 
+        links: [
+            { name: 'FEDITC', link: 'https://www.feditc.com/' },
+            { name: 'LOGMOD Application Definition', link: 'https://www.globalsecurity.org/military/library/policy/usaf/cwpc/3200-bc.htm' }
+        ],
         body: [
             "Lead a team of five developers, hosted daily meetings and attended to documentation and monthly reporting requirements.",
             "Scheduled and managed deployments",
@@ -27,6 +35,9 @@ export const experience = [
     { 
         title: "Miriam Academy", 
         job: 'High School Teacher', 
+        links: [
+            { name: 'Miriam STL', link: 'https://www.miriamstl.org/' },
+        ],
         body: [
             "Created, maintained and implemented new curriculum to better reach learning targets and adapt to a varied student ability level.",
             "Instructed on a variety of topics from English Literature, World History, Video Production, C++ and Python.",

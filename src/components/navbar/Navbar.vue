@@ -1,30 +1,32 @@
 <template>
-  <div class="z-front">
-    <div id="nav" class="mx-auto center w-75" v-if="showNavbar">
+  <div class="navbar-height">
+    <div id="nav" class="center" v-if="showNavbar">
       <NavItem title="Home" link="/" position="1" />
       <NavItem title="About" link="about" position="2" />
       <NavItem title="Resume" link="resume" position="3" />
       <NavItem title="Projects" link="projects" position="4" />
       <NavItem title="Contact" link="contact" position="5" />
     </div>
-    <div id="nav" class="navbar-media" v-else>
-      <b-button class="w-100 center-icon bg-dark" @click="openNav"><i class="material-icons light" style="font-size:36px">menu</i></b-button>
-    
-    <div id="myNav" class="overlay" >
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" @click="closeNav()"
-        >&times;</a
-      >
 
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <NavItem title="Home" link="/" @click="closeNav()" />
-        <NavItem title="About" link="about" @click="closeNav()" />
-        <NavItem title="Resume" link="resume" @click="closeNav()" />
-        <NavItem title="Projects" link="projects" @click="closeNav()" />
-        <NavItem title="Contact" link="contact" @click="closeNav()" />
+    <!-- Mobile Nav Drop Down -->
+    <div id="nav" v-else>
+      <b-button class="center-icon bg-dark br-2 p-1" @click="openNav">
+        <i class="material-icons fc-light" style="font-size: 48px">menu</i>
+      </b-button>
+
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" @click="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <NavItem title="Home" link="/" @click="closeNav()" />
+          <NavItem title="About" link="about" @click="closeNav()" />
+          <NavItem title="Resume" link="resume" @click="closeNav()" />
+          <NavItem title="Projects" link="projects" @click="closeNav()" />
+          <NavItem title="Contact" link="contact" @click="closeNav()" />
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </template>
@@ -38,17 +40,14 @@ export default {
   components: { NavItem },
   computed: {
     showNavbar() {
-      return window.screen.availWidth > 450;
+      return window.screen.availWidth > 768;
     },
   },
   data() {
     return {};
   },
   mounted() {
-
-      // fadeIn("nav", null, 1000, 30);
-    
-    
+    // fadeIn("nav", null, 1000, 30);
   },
   methods: {
     openNav() {
@@ -62,18 +61,12 @@ export default {
 </script>
 
 <style scoped>
-.z-front {
-  z-index: 1000;
-}
+.navbar-height { height: 50px; }
 
-.navbar-media {
-  border-radius: 5px;
-}
-
-.center-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .border-bottom {
@@ -90,7 +83,7 @@ export default {
   left: 0;
   top: 0;
   background-color: rgb(0, 0, 0); /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -109,7 +102,7 @@ export default {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: #eeeeee;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }

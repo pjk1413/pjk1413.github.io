@@ -1,0 +1,26 @@
+.button {
+    background-color: var(--white);
+    color: var(--dark);
+    font-weight: 800;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    color: var(--white)
+}
+
+/* .welcome {
+    font-size: 10em;
+}
+
+.heading {
+    font-size: 6em;
+    margin: 0;
+}
+
+.nav-item {
+    font-size: 1.3em;
+    padding-left: .5em;
+    padding-right: .5em;
+} */

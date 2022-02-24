@@ -1,5 +1,5 @@
 <template>
-<router-link :id="title" :class="`quicksand nav-link bolder mx-4 ${color}`" :to="link"></router-link>
+<router-link :id="title" class="t4 px-05 no-deco quicksand fc-secondary" :to="link"></router-link>
     
 </template>
 
@@ -12,7 +12,7 @@ export default {
         link: String,
         color: {
             type: String,
-            default: 'secondary'
+            default: 'fc-secondary'
         },
         typeIn: {
             type: Boolean,
@@ -34,21 +34,10 @@ export default {
 
 <style scoped>
 
-@media screen and (min-width: 401px) {
-.nav-link {
-    padding: 4px;
-    padding-left: 6px;
-    padding-right: 6px;
+a:hover {
     border-radius: 5px;
-    font-size: 1.3em;
-    text-decoration: none;
-}
-}
-
-.nav-link:hover {
     background-color: rgba(235, 235, 235);
 }
-
 
 
 </style>

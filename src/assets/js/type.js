@@ -2,10 +2,7 @@ export function type(element_id, text, speed, startpos, delay=0, classColor = 'i
     setTimeout(() => {
         console.log(startpos)
         let elem = document.getElementById(element_id)
-        // elem.style.position = 'absolute'
-        // elem.style.top = `${startpos.y}px`
-        // elem.style.left = `${startpos.x}px`
-
+        elem.style.opacity = 1;
         for (let i = 0; i < [...text].length + 2; i++) {
             setTimeout(() => {
                 let innerText = ''

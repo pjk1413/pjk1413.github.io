@@ -1,69 +1,62 @@
 <template>
   <div>
-    <!-- <div id="square" class="bg-warning square" style="top: 0px; left: 200px;"></div> -->
-    <Welcome />
-    <div id='type1' class="bolder quicksand primary type"></div>
-    <div id='type2' class="bolder quicksand primary type"></div>
-    
+    <div class="media-space-medium">
+      <div class="container">
+        <div class="center">
+          <h1 id="heading" class="raleway dark h m-1">Welcome</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="type1" class="quicksand fc-primary center h5"></div>
+    <div id="type2" class="quicksand fc-primary center h5"></div>
   </div>
 </template>
 
 <script>
-// import {dropdown} from "@/assets/js/drop"
-import {type} from "@/assets/js/type"
-import Welcome from '@/views/home/Welcome.vue'
-
+import { type } from "@/assets/js/type";
+import { fadeIn } from "@/assets/js/fade";
 
 export default {
-  name: 'Home',
-  components: {
-    Welcome,
-  },
+  name: "Home",
+  components: {},
   data() {
     return {
-      squares: []
-    }
+      squares: [],
+    };
   },
   mounted() {
-    let yCenter = window.innerHeight/2
+    let yCenter = window.innerHeight / 2;
+    fadeIn("heading", "Welcome", 0, 10);
 
-    type('type1','My name is ^Patrick Kramer', 100, {x: 0, y:yCenter}, 1000, 'bold-name dark', false)
-    type('type2', "I'm a ^software developer", 100, {x: 0, y: yCenter+ 60}, 4000, 'bold-name-small secondary ubuntu', true)
+    type(
+      "type1",
+      "My name is ^Patrick Kramer",
+      100,
+      { x: 0, y: yCenter },
+      1000,
+      "fw-5 fc-dark",
+      false
+    );
+
+    type(
+      "type2",
+      "I'm a ^software developer",
+      100,
+      { x: 0, y: yCenter + 60 },
+      4000,
+      "fw-4 fc-secondary ubuntu",
+      true
+    );
   },
-  methods: {
-
-  }
-}
+  methods: {},
+};
 </script>
 
 <style>
-@media screen and (max-width: 400px) {
-  .type {
-  text-align: center;
-  font-size: 150%;
-  width: 100%;
+.container {
+  position: relative;
 }
-
-}
-
-@media screen and (min-width: 401px) {
-.type {
-  text-align: center;
-  font-size: 300%;
-  width: 100%;
-}
-
-}
-
-.bold-name-small {
-  font-size: 110%;
-}
-
-.bold-name {
-  font-size: 120%;
-  font-weight: bolder;
-}
-
 
 
 </style>

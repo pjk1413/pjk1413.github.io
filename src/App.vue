@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import '@/assets/css/portfolio.css'
+import '@/assets/css/_portfolio.css'
 import Navbar from '@/components/navbar/Navbar.vue'
 
 
@@ -16,9 +16,5 @@ import Navbar from '@/components/navbar/Navbar.vue'
 
 
 <style>
-/* body {
-  overflow-y: hidden; 
-  overflow-x: hidden;
-} */
 
 </style>

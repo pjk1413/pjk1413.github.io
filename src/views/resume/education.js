@@ -6,7 +6,11 @@ export const education = [
             'Learned hands on by creating various desktop and web based applications using Java, Spring, React and MySQL', 
             'Created and presented a capstone project and presentation to be given to an audience of local professionals'
         ], 
-        date: 'April 2020 - June 2020'},
+        date: 'April 2020 - June 2020',
+        links: [
+            { name: 'Claim Academy Home', link: 'https://www.claimacademystl.com/' }
+        ],
+    },
     {
         title: 'St. Louis Community College',
         job: 'Continuing Education',
@@ -14,7 +18,10 @@ export const education = [
             'Continually looking to learn more, have taken a number of different courses through St. Louis Community College to further my knowledge and growth',
             'Began my journey as a developer here after taking C# 101 and C# 201 where I was exposed to the basics of .Net, Winforms, SQL, basic database design and CRUD',
         ],
-        date: 'August 2018 - Present'
+        date: 'August 2018 - Present',
+        links: [
+            { name: 'Saint Louis Community College', link: 'https://stlcc.edu/' }
+        ],
     },
     { 
         title: 'University of Missouri - St. Louis', 
@@ -23,7 +30,10 @@ export const education = [
             'Completed a teaching certificate in paralell to earning a Masters degree', 
             'Studied secondary English education with an emphasis in curriculum design',
         ], 
-        date: 'May 2011 - December 2014'
+        date: 'May 2011 - December 2014',
+        links: [
+            { name: 'University of Missouri - St. Louis', link: 'https://www.umsl.edu/' }
+        ],
     },
     {
         title: 'Truman State University',
@@ -33,6 +43,9 @@ export const education = [
             'Recieved a minor in Philosophy',
             'Studied abroad in Costa Rica'
         ],
-        date: 'August 2007 - May 2011'
+        date: 'August 2007 - May 2011',
+        links: [
+            { name: 'Truman State University', link: 'https://www.truman.edu/' }
+        ],
     }
 ]

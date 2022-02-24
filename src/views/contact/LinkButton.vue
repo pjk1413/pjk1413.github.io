@@ -1,8 +1,8 @@
 <template>
-    <button class="link-button secondary no-padding" @click="navigateToLink()">
+    <button class="w-75 border-solid br-2 bw-4 bc-light m-05 p-0 hover-dark" @click="navigateToLink()">
         <div id="grid-container" class="grid-container">
-            <div class="grid-column bg-secondary light column-type">{{type}}</div>
-            <div id="values" class="grid-column column-value">{{value}}</div>
+            <div class="ubuntu fs-15 grid-column bg-secondary br-2 fc-white hover-light">{{type}}</div>
+            <div id="values" class="raleway fw-3 grid-column fc-dark hover-dark">{{value}}</div>
         </div>
         </button>
 </template>
@@ -51,18 +51,6 @@ export default {
     color: white;
 }
 
-.link-button {
-  cursor: pointer;
-  /* padding: 10px; */
-  width: 80%;
-  border: 0px solid rgba(142, 202, 230);
-  text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  transition: .5s;
-  margin: 1px;
-}
-
 .link {
     text-decoration: none;
     text-align: center;
@@ -71,7 +59,7 @@ export default {
 .grid-column {
     text-align: center;
     padding: 8px;
-    transition: .5s;
+    transition: .4s;
 }
 
 .hidden {
@@ -81,7 +69,7 @@ export default {
 .grid-container {
     display: grid;
     grid-template-columns: 40% 60%;
-    transition: .5s;
+    transition: .4s;
 }
 
 .no-padding {

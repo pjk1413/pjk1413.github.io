@@ -1,0 +1,22 @@
+.w-25 { width: 25%; }
+.w-50 { width: 50%; }
+.w-75 { width: 75%; }
+.w-90 { width: 90%; }
+.w-100 { width: 100%; }
+
+.h-0 {
+    height: 0;
+}
+
+/* cell phones */
+@media only screen and (max-width: 480px) {
+    .w-25 { width: 25%; }
+    .w-50 { width: 50%; }
+    .w-75 { width: 90%; }
+    .w-90 { width: 95%; }
+    .w-100 { width: 100%; }
+}
+/* tablets */
+@media only screen and (max-width: 768px) {}
+/* small screens and laptops */
+@media only screen and (max-width: 1024px) {} 

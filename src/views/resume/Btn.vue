@@ -1,5 +1,5 @@
 <template>
-  <button :id="text" class="sk-bdg mx-1 ubuntu" @click="showDescription()">
+  <button :id="text" class="sk-bdg mx-02 ubuntu" @click="showDescription()">
     {{ text }} <span :id="text+description" class="description bg-light transition">{{description}}</span>
   </button>
 </template>

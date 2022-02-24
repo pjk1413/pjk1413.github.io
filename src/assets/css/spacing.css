@@ -1,0 +1,71 @@
+.p-0 { padding: 0; }
+.p-05 { padding: 0.5em; }
+.p-1 { padding: 1em; }
+.p-2 { padding: 2em; }
+.p-3 { padding: 3em; }
+.p-4 { padding: 4em; }
+.p-5 { padding: 5em; }
+
+.px-05 { padding: 0 .5em 0 .5em; }
+.px-1 { padding: 0 1em 0 1em; }
+.px-2 { padding: 0 2em 0 2em; }
+.px-3 { padding: 0 3em 0 3em; }
+.px-4 { padding: 0 4em 0 4em; }
+.px-5 { padding: 0 5em 0 5em; }
+
+
+.pt-05 { padding-top: .5em; }
+
+.pr-1 { padding-right: 1em; }
+.pr-2 { padding-right: 2em; }
+.pr-3 { padding-right: 3em; }
+
+.pl-1 { padding-left: 1em; }
+.pl-2 { padding-left: 2em; }
+.pl-3 { padding-left: 3em; }
+
+.m-0 { margin: 0; }
+.m-01 { margin: .1em; }
+.m-05 { margin: .3em; }
+.m-1 { margin: .5em !important; }
+.m-2 { margin: 1em; }
+.m-3 { margin: 2em !important; }
+.m-4 { margin: 3em; }
+.m-5 { margin: 4em; }
+
+.mx-02 { margin: 0 .2em 0 .2em; }
+.mx-1 { margin: 0 1em 0 1em; }
+.mx-2 { margin: 0 2em 0 2em; }
+.mx-3 { margin: 0 3em 0 3em; }
+.mx-4 { margin: 0 4em 0 4em; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.container { margin-top: 1em; }
+
+.center-screen {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+/* cell phones */
+@media only screen and (max-width: 480px) {
+  .p-0 { padding: 0; }
+  .p-05 { padding: 0.5em; }
+  .p-1 { padding: 1em; }
+  .p-2 { padding: 1em; }
+  .p-3 { padding: 3em; }
+  .p-4 { padding: 4em; }
+  .p-5 { padding: 5em; }
+}
+/* tablets */
+@media only screen and (max-width: 768px) {}
+/* small screens and laptops */
+@media only screen and (max-width: 1024px) {} 
+
+

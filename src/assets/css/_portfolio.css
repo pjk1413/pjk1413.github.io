@@ -1,0 +1,21 @@
+@import "spacing.css";
+@import "align.css";
+@import "borders.css";
+@import "text.css";
+@import "size.css";
+@import "media.css";
+@import "decoration.css";
+@import "custom.css";
+
+:root {
+    --primary: rgba(142, 202, 230);
+    --grey: rgba(202, 210, 197);
+    --secondary: rgba(33, 158, 188);
+    --info: rgba(255, 183, 3);
+    --danger: rgba(219, 76, 64);
+    --warning: rgba(251, 133, 0);
+    --dark: rgba(2, 48, 71);
+    --light: rgba(235, 235, 235);
+    --white: white;
+    --black: black;
+  }
