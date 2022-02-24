@@ -1,13 +1,13 @@
 <template>
   <div @click="expand">
     <div class="item-container p-1">
-      <div :id="'description' + title" class="description bg-light br-3 w-100">
+      <div :id="'description' + title" class="description bg-light br-3 w-100 m-05">
         <div :id="'content' + title" class="fc-dark content"></div>
         <div :id="'content' + company" class="fc-dark content"></div>
         <div :id="'content' + title + 'tech'" class="fc-dark content"></div>
         <div
           :id="'thumbnail' + title"
-          class="thumbnail bg-secondary fc-white fs-3 p-05 br-3 w-100"
+          class="thumbnail bg-secondary fc-white h6 p-05 br-3 w-100"
         >
           {{ title }}
         </div>
@@ -64,8 +64,6 @@ export default {
           setTimeout(() => {
             content.style.padding = '5px'
             content.style.display = "block";
-            console.log(thumbnail.style)
-            // let extraHeight = thumbPos.height - (thumbnail.style.padding * 2) - (thumbnail.style.borderWidth * 2)
             content.style.top = thumbPos.height + 5 + 'px'
             content.style.opacity = 0;
             
@@ -119,6 +117,7 @@ export default {
 </script>
 
 <style scoped>
+
 .thumbnail {
   transition-duration: 1s;
   height: 30px;
