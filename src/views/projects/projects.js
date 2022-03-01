@@ -14,6 +14,13 @@ export const projects = [
         links: []
     },
     {
+        title: 'Blueprint Legal',
+        description: `A SPA website to advertise the services of a small lawfirm.  Provides a contact form as well.`,
+        tech: ['HTML', 'CSS', 'React', 'Bootstrap4/5', 'Redux'],
+        company: 'Blueprint Legal',
+        links: ['http://blueprintlegal.org/']
+    },
+    {
         title: 'Gradely',
         description: `A SIS (Student Information System) built as a capstone project.  Application has the ability to restrict user access based on user type, message other members, 
         keep track of assignments, grades, student progress.  `,
