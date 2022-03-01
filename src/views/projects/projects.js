@@ -18,7 +18,9 @@ export const projects = [
         description: `A SPA website to advertise the services of a small lawfirm.  Provides a contact form as well.`,
         tech: ['HTML', 'CSS', 'React', 'Bootstrap4/5', 'Redux'],
         company: 'Blueprint Legal',
-        links: ['http://blueprintlegal.org/']
+        links: [
+            { link: 'http://blueprintlegal.org/',
+            name: 'BlueprintLegal.org'} ]
     },
     {
         title: 'Gradely',

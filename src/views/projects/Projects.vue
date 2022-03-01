@@ -7,7 +7,7 @@
   </div>
   <div class="w-75 mx-auto">
     <div class="raleway fc-secondary">
-      <Item :key="project.title" v-for="project in projects" :title="project.title" :description="project.description" :tech="project.tech" :company="project.company"/>
+      <Item :key="project.title" v-for="project in projects" :links="project.links" :title="project.title" :description="project.description" :tech="project.tech" :company="project.company"/>
 
     </div>
   </div>

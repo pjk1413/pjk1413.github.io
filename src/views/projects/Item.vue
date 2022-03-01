@@ -23,6 +23,7 @@ export default {
   props: {
     description: String,
     title: String,
+    links: Array,
     company: String,
     tech: Array,
   },
@@ -39,10 +40,18 @@ export default {
         buttons += `<button class="border-solid br-4 bg-warning fc-dark bc-warning mx-02">${t}</button>`;
       });
 
+      let company = `<div class="italic p-05">${this.company}</div>`
+
+      if (this.links.length > 0) {
+        company = `<div class="italic p-05">
+        <a style="text-decoration: none" href=${this.links[0].link}>${this.company}</a>
+        </div>`        
+      }
+
       let content = `
             <div>
                 <div class="">${this.description}</div>
-                <div class="italic p-05">${this.company}</div>
+                ${company}
                 <div class=" pt-05">
                     ${buttons}
                 </div>
